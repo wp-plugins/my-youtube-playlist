@@ -21,8 +21,6 @@ The id's like "LO3n67BQvh0" for instace is youtube-clip id's. LO3n67BQvh0 is the
 
 This section describes how to install the plugin and get it working.
 
-e.g.
-
 1. Upload "myyoutubeplaylist" to the "/wp-content/plugins/" directory
 2. Activate the plugin through the "Plugins" menu in WordPress
 2. Add the hook in a post. Exapmle: [myyoutubeplaylist LO3n67BQvh0, WGOohBytKTU, iwY5o2fsG7Y, PyKNxUThW4E, 1cX4t5-YpHQ, SJ183htYl-8, eWwoHPrrJYY, bja2ttzGOFM]
