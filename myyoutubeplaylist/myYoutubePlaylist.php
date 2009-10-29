@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: My Youtube Playlist
-Plugin URI: http://jonk.pirateboy.net
-Description: Custom playlist from youtube with thumbnails, loads youtube clips without reloading your page.
-Version: 0.2
+Plugin URI: http://jonk.pirateboy.net/blog/category/bloggeriet/wordpress/plugins/
+Description: Custom playlist from YouTube with thumbnails, loads YouTube clips without reloading your page.  Example: [myyoutubeplaylist WnY59mDJ1gg, bKwQ_zeRwEs]
+Version: 0.3
 Author: Jonk
 Author URI: http://jonk.pirateboy.net
 */
@@ -17,17 +17,21 @@ define("myYoutubePlaylist_TARGET", "<div class=\"myYoutubePlaylist\">
 			<!--
 				myYoutubePlaylist_cy('###STARTVIDEO###','myYoutubePlaylist_###STARTVIDEO###');
 			//-->
-		</script>
+		</script><noscript><object width=\"500\" height=\"307\">
+				<param name=\"movie\" value=\"http://www.youtube.com/v/###STARTVIDEO###&hl=en&fs=1\"></param>
+				<param name=\"allowFullScreen\" value=\"true\"></param>
+				<param name=\"allowscriptaccess\" value=\"always\"></param>
+				<embed src=\"http://www.youtube.com/v/###STARTVIDEO###&hl=en&fs=1\" type=\"application/x-shockwave-flash\" width=\"500\" height=\"307\" allowscriptaccess=\"always\" allowfullscreen=\"true\"></embed>
+			</object></noscript>
 	</div>
 	<div class=\"myYoutubePlaylist_YoutubePlaylist\">
 		<ul class=\"myYoutubePlaylist_Ul\" id=\"myYoutubePlaylist_Ul_###STARTVIDEO###\">
 			<script language=\"JavaScript\" type=\"text/javascript\">
-			<!--
-				myYoutubePlaylist_dl('###ALLVIDEOS###','myYoutubePlaylist_Ul_###STARTVIDEO###','myYoutubePlaylist_###STARTVIDEO###');
-			//-->
-		</script>
-		</ul>
-	</div>
+				<!--
+						myYoutubePlaylist_dl('###ALLVIDEOS###','myYoutubePlaylist_Ul_###STARTVIDEO###','myYoutubePlaylist_###STARTVIDEO###');
+				//-->
+			</script>
+		</ul></div>
 </div>
 <div class=\"myYoutubePlaylist_clearer\"></div>
 ");
