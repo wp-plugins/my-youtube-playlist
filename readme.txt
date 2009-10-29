@@ -4,7 +4,7 @@ Donate link: http://jonk.pirateboy.net/
 Tags: youtube, playlist
 Requires at least: 2.7.0
 Tested up to: 2.7.5
-Stable tag: 0.2
+Stable tag: 0.3
 
 Custom playlist from youtube with thumbnails, loads youtube clips without reloading your page.
 
