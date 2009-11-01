@@ -1,6 +1,6 @@
 === My Youtube Playlist ===
 Contributors: Jonk
-Donate link: http://jonk.pirateboy.net/
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9344931
 Tags: youtube, playlist
 Requires at least: 2.7.0
 Tested up to: 2.7.5
@@ -49,7 +49,3 @@ None, yet.
 
 = 0.1 =
 * Creation
-
-== Arbitrary section ==
-
-== A brief Markdown Example ==
