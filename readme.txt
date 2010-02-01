@@ -3,8 +3,8 @@ Contributors: Jonk
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9344931
 Tags: youtube, playlist
 Requires at least: 2.7.0
-Tested up to: 2.7.5
-Stable tag: 0.33
+Tested up to: 2.9.1
+Stable tag: 1.0
 
 Custom playlist from youtube with thumbnails, loads youtube clips without reloading your page. Example: [myyoutubeplaylist WnY59mDJ1gg, bKwQ_zeRwEs]
 
@@ -34,6 +34,9 @@ None, yet.
 1. The plugin in action. Showing the first clip and the playlist.
 
 == Changelog ==
+
+= 1.0 =
+* No longer beta
 
 = 0.33 =
 * Subversion problems
