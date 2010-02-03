@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: youtube, playlist
 Requires at least: 2.7.0
 Tested up to: 2.9.1
-Stable tag: 1.03
+Stable tag: 1.04
 
 Custom playlist from youtube with thumbnails, loads youtube clips without reloading your page. Example: [myyoutubeplaylist WnY59mDJ1gg, bKwQ_zeRwEs]
 
@@ -35,7 +35,7 @@ None, yet.
 
 == Changelog ==
 
-= 1.03 =
+= 1.04 =
 * Correcting folder structure
 
 = 1.02 =
