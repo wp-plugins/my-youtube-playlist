@@ -3,7 +3,7 @@
 Plugin Name: My Youtube Playlist
 Plugin URI: http://jonk.pirateboy.net/blog/category/bloggeriet/wordpress/plugins/
 Description: Custom playlist from YouTube with thumbnails, loads YouTube clips without reloading your page.  Example: [myyoutubeplaylist WnY59mDJ1gg, bKwQ_zeRwEs]
-Version: 0.33
+Version: 1.02
 Author: Jonk
 Author URI: http://jonk.pirateboy.net
 */
@@ -17,21 +17,22 @@ define("myYoutubePlaylist_TARGET", "<div class=\"myYoutubePlaylist\">
 			<!--
 				myYoutubePlaylist_cy('###STARTVIDEO###','myYoutubePlaylist_###STARTVIDEO###');
 			//-->
-		</script><noscript><object width=\"500\" height=\"307\">
+		</script><noscript><object width=\"500\" height=\"307\" data=\"http://www.youtube.com/v/###STARTVIDEO###&hl=en&fs=1\" type=\"application/x-shockwave-flash\">
+				<!--[if lte IE 6]>				
 				<param name=\"movie\" value=\"http://www.youtube.com/v/###STARTVIDEO###&hl=en&fs=1\"></param>
 				<param name=\"allowFullScreen\" value=\"true\"></param>
 				<param name=\"allowscriptaccess\" value=\"always\"></param>
 				<embed src=\"http://www.youtube.com/v/###STARTVIDEO###&hl=en&fs=1\" type=\"application/x-shockwave-flash\" width=\"500\" height=\"307\" allowscriptaccess=\"always\" allowfullscreen=\"true\"></embed>
+				<![endif]-->
 			</object></noscript>
 	</div>
-	<div class=\"myYoutubePlaylist_YoutubePlaylist\">
-		<ul class=\"myYoutubePlaylist_Ul\" id=\"myYoutubePlaylist_Ul_###STARTVIDEO###\">
-			<script language=\"JavaScript\" type=\"text/javascript\">
-				<!--
-						myYoutubePlaylist_dl('###ALLVIDEOS###','myYoutubePlaylist_Ul_###STARTVIDEO###','myYoutubePlaylist_###STARTVIDEO###');
-				//-->
-			</script>
-		</ul></div>
+	<div class=\"myYoutubePlaylist_YoutubePlaylist\" id=\"myYoutubePlaylist_YoutubePlaylist_###STARTVIDEO###\">
+		<script language=\"JavaScript\" type=\"text/javascript\">
+			<!--
+				myYoutubePlaylist_dl('###ALLVIDEOS###','myYoutubePlaylist_YoutubePlaylist_###STARTVIDEO###','myYoutubePlaylist_###STARTVIDEO###');
+			//-->
+		</script>
+	</div>
 </div>
 <div class=\"myYoutubePlaylist_clearer\"></div>
 ");
