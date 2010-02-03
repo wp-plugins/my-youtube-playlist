@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: youtube, playlist
 Requires at least: 2.7.0
 Tested up to: 2.9.1
-Stable tag: 1.04
+Stable tag: 1.05
 
 Custom playlist from youtube with thumbnails, loads youtube clips without reloading your page. Example: [myyoutubeplaylist WnY59mDJ1gg, bKwQ_zeRwEs]
 
@@ -21,9 +21,9 @@ The id's like "LO3n67BQvh0" for instace is youtube-clip id's. LO3n67BQvh0 is the
 
 This section describes how to install the plugin and get it working.
 
-1. Upload "myyoutubeplaylist" to the "/wp-content/plugins/" directory
+1. Upload "my-youtube-playlist" to the "/wp-content/plugins/" directory
 2. Activate the plugin through the "Plugins" menu in WordPress
-2. Add the hook in a post. Exapmle: [myyoutubeplaylist LO3n67BQvh0, WGOohBytKTU, iwY5o2fsG7Y, PyKNxUThW4E, 1cX4t5-YpHQ, SJ183htYl-8, eWwoHPrrJYY, bja2ttzGOFM]
+2. Add the hook in a post. Example: [myyoutubeplaylist LO3n67BQvh0, WGOohBytKTU, iwY5o2fsG7Y, PyKNxUThW4E, 1cX4t5-YpHQ, SJ183htYl-8, eWwoHPrrJYY, bja2ttzGOFM]
 
 == Frequently Asked Questions ==
 
@@ -34,6 +34,9 @@ None, yet.
 1. The plugin in action. Showing the first clip and the playlist.
 
 == Changelog ==
+
+= 1.05 =
+* Correcting path to files due to folder structure
 
 = 1.04 =
 * Correcting folder structure
