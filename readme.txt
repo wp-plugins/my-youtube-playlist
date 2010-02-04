@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: youtube, playlist
 Requires at least: 2.7.0
 Tested up to: 2.9.1
-Stable tag: 1.05
+Stable tag: 1.06
 
 Custom playlist from youtube with thumbnails, loads youtube clips without reloading your page. Example: [myyoutubeplaylist WnY59mDJ1gg, bKwQ_zeRwEs]
 
@@ -34,6 +34,15 @@ None, yet.
 1. The plugin in action. Showing the first clip and the playlist.
 
 == Changelog ==
+
+= 1.06 =
+* Changed row 21 in myYoutubePlaylist.css
+From ".myYoutubePlaylist_YoutubeMovie embed, .myYoutubePlaylist_YoutubeMovie object {" to ".myYoutubePlaylist_YoutubeMovie, .myYoutubePlaylist_YoutubeMovie embed, .myYoutubePlaylist_YoutubeMovie object {"
+As a result the youtube area keeps its size when clicking the playlist.
+* Changed the IE check in myYoutubePlaylist.js to javascriptcheck for all IEs, added rows 3-11, changed rows 24 and 30
+As a result it works on all IEs too.
+* Changed the IE check in myYoutubePlaylist.php to all IEs (to <!--[if IE]> from <!--[if lte IE 6]>)
+As a result it works on all IEs without javascript too.
 
 = 1.05 =
 * Correcting path to files due to folder structure

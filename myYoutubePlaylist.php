@@ -3,7 +3,7 @@
 Plugin Name: My Youtube Playlist
 Plugin URI: http://jonk.pirateboy.net/blog/category/bloggeriet/wordpress/plugins/
 Description: Custom playlist from YouTube with thumbnails, loads YouTube clips without reloading your page.  Example: [myyoutubeplaylist WnY59mDJ1gg, bKwQ_zeRwEs]
-Version: 1.05
+Version: 1.06
 Author: Jonk
 Author URI: http://jonk.pirateboy.net
 */
@@ -18,7 +18,7 @@ define("myYoutubePlaylist_TARGET", "<div class=\"myYoutubePlaylist\">
 				myYoutubePlaylist_cy('###STARTVIDEO###','myYoutubePlaylist_###STARTVIDEO###');
 			//-->
 		</script><noscript><object width=\"500\" height=\"307\" data=\"http://www.youtube.com/v/###STARTVIDEO###&hl=en&fs=1\" type=\"application/x-shockwave-flash\">
-				<!--[if lte IE 6]>				
+				<!--[if IE]>			
 				<param name=\"movie\" value=\"http://www.youtube.com/v/###STARTVIDEO###&hl=en&fs=1\"></param>
 				<param name=\"allowFullScreen\" value=\"true\"></param>
 				<param name=\"allowscriptaccess\" value=\"always\"></param>

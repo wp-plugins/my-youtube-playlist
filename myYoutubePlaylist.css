@@ -18,7 +18,7 @@ Download from http://wordpress.org/extend/plugins/my-youtube-playlist
 	*/
 	padding-bottom:10px;
 }
-.myYoutubePlaylist_YoutubeMovie embed, .myYoutubePlaylist_YoutubeMovie object {
+.myYoutubePlaylist_YoutubeMovie, .myYoutubePlaylist_YoutubeMovie embed, .myYoutubePlaylist_YoutubeMovie object {
 	/*
 	This is the size of the YouTube-clip, change here to fit your theme
 	*/
