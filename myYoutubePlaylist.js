@@ -4,6 +4,12 @@ WordPress Plugin by Jonk, http://jonk.pirateboy.net
 Download from http://wordpress.org/extend/plugins/my-youtube-playlist
 */
 
+//check for ie
+ie = false;
+if (document.all) {
+	var ie = true;
+}
+
 //a function to choose another youtube-video without reloading the page
 function myYoutubePlaylist_cy(ytSrc,containerId,type) {
 	if (type == null || type == '') {
@@ -15,13 +21,13 @@ function myYoutubePlaylist_cy(ytSrc,containerId,type) {
 //a function to load flashmovies. it also prevents ie from adding the ugly border
 function myYoutubePlaylist_cf(FlashVars,movie,width,height,type) {
 	myYoutubePlaylist_cfStr = '<obj' + 'ect width="' + width + '" height="' + height + '" data="' + 'http://www.youtube.com/'+ type +'/'+ movie +'&hl=en&fs=1' + '" type="application/x-shockwave-flash">';
-	myYoutubePlaylist_cfStr += '<!--[if lte IE 6]>';
-	myYoutubePlaylist_cfStr += '<param name="movie" value="http://www.youtube.com/'+ type +'/'+ movie +'&hl=en&fs=1"></param>';
-	myYoutubePlaylist_cfStr += '<param name="allowFullScreen" value="true"></param>';
-	myYoutubePlaylist_cfStr += '<param name="allowscriptaccess" value="always"></param>';
-	myYoutubePlaylist_cfStr += '<param name="FlashVars" value="'+ FlashVars +'">';
-	myYoutubePlaylist_cfStr += '<embed src="http://www.youtube.com/'+ type +'/'+ movie +'&hl=en&fs=1" type="application/x-shockwave-flash" width="' + width + '" height="' + height + '" allowscriptaccess="always" allowfullscreen="true"></embed>';
-	myYoutubePlaylist_cfStr += '<![endif]-->';
+	if (ie) {
+		myYoutubePlaylist_cfStr += '<param name="movie" value="http://www.youtube.com/'+ type +'/'+ movie +'&hl=en&fs=1"></param>';
+		myYoutubePlaylist_cfStr += '<param name="allowFullScreen" value="true"></param>';
+		myYoutubePlaylist_cfStr += '<param name="allowscriptaccess" value="always"></param>';
+		myYoutubePlaylist_cfStr += '<param name="FlashVars" value="'+ FlashVars +'">';
+		myYoutubePlaylist_cfStr += '<embed src="http://www.youtube.com/'+ type +'/'+ movie +'&hl=en&fs=1" type="application/x-shockwave-flash" width="' + width + '" height="' + height + '" allowscriptaccess="always" allowfullscreen="true"></embed>';
+	}
 	myYoutubePlaylist_cfStr += '<' + '/object>';
 	return myYoutubePlaylist_cfStr;
 }
