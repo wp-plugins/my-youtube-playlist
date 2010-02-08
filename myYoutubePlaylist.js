@@ -35,11 +35,15 @@ function myYoutubePlaylist_cf(FlashVars,movie,width,height,type) {
 //a function to load all movies with thumbs to a list
 function myYoutubePlaylist_dl(allVideos,containerId,targetContainerId) {
 	allVideosArr = allVideos.split(', ');
-	allVideosLi = '<ul class="myYoutubePlaylist_Ul" >';
-	for (var i=0; i < allVideosArr.length; i++) {
-		thisLink = 'javascript:myYoutubePlaylist_cy(\''+allVideosArr[i]+'\',\''+targetContainerId+'\');'
-		allVideosLi += '<li>' + '<a href="'+thisLink+'">' + '<img class="myYoutubePlaylist_Img"  alt="" src="http://i3.ytimg.com/vi/'+allVideosArr[i]+'/default.jpg"/>' + '</'+'a></'+'li>';
+	if (allVideosArr.length > 1) {
+		allVideosLi = '<ul class="myYoutubePlaylist_Ul" >';	
+		for (var i=0; i < allVideosArr.length; i++) {
+			thisLink = 'javascript:myYoutubePlaylist_cy(\''+allVideosArr[i]+'\',\''+targetContainerId+'\');'
+			allVideosLi += '<li>' + '<a href="'+thisLink+'">' + '<img class="myYoutubePlaylist_Img"  alt="" src="http://i3.ytimg.com/vi/'+allVideosArr[i]+'/default.jpg"/>' + '</'+'a></'+'li>';
+		}
+		allVideosLi += '</ul>';
+		document.getElementById(containerId).innerHTML = allVideosLi;
+	} else {
+		document.getElementById(containerId).style.display = 'none';
 	}
-	allVideosLi += '</ul>';
-	document.getElementById(containerId).innerHTML = allVideosLi;
 }
