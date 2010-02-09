@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: youtube, playlist
 Requires at least: 2.7.0
 Tested up to: 2.9.1
-Stable tag: 1.07
+Stable tag: 1.1
 
 Custom playlist from youtube with thumbnails, loads youtube clips without reloading your page. Example: [myyoutubeplaylist WnY59mDJ1gg, bKwQ_zeRwEs]
 
@@ -35,8 +35,13 @@ None, yet.
 
 == Changelog ==
 
+= 1.1 =
+* Fullscreen support added.
+* Moved the loading javascript outside the containers for better loading order.
+* I've also added the embed-tags again even though it is not Xhtml-valid simply because that is what Google Reader uses to show flash, and to have the plugin working is more important than getting less warnings when validating.
+
 = 1.07 =
-If only one (1) YouTube id is added to the hook, like [myyoutubeplaylist LO3n67BQvh0] the playlist (containing the only clip) is not shown.
+* If only one (1) YouTube id is added to the hook, like [myyoutubeplaylist LO3n67BQvh0] the playlist (containing the only clip) is not shown.
 
 = 1.06 =
 * Changed row 21 in myYoutubePlaylist.css
