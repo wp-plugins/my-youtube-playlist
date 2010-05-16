@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: youtube, playlist
 Requires at least: 2.7.0
 Tested up to: 2.9.1
-Stable tag: 1.1
+Stable tag: 1.2
 
 Custom playlist from youtube with thumbnails, loads youtube clips without reloading your page. Example: [myyoutubeplaylist WnY59mDJ1gg, bKwQ_zeRwEs]
 
@@ -34,6 +34,9 @@ None, yet.
 1. The plugin in action. Showing the first clip and the playlist.
 
 == Changelog ==
+
+= 1.2 =
+* When clicking a clip from the playlist it automatically starts playing.
 
 = 1.1 =
 * Fullscreen support added.
